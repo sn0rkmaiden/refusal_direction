@@ -5,10 +5,7 @@ import gc
 import numpy as np
 
 from transformers import AutoTokenizer
-from vllm import LLM, SamplingParams
-from vllm.distributed.parallel_state import destroy_model_parallel
 import torch
-import litellm
 import time
 
 # based on https://github.com/JailbreakBench/jailbreakbench/blob/4dbcc097739dd684fbf789cc3d4f97372bd72851/src/jailbreakbench/classifier.py
@@ -103,9 +100,12 @@ class LlamaGuard2Classifier:
         returns:
             list of booleans, True if the response is classified as jailbroken and False otherwise
         """
+        import litellm
+
         classifier_inputs = [
             self._build_classifier_input(prompt, response) for prompt, response in zip(prompts, responses)
         ]
+        
         outputs = litellm.batch_completion(
             model=self.MODEL, messages=classifier_inputs, api_key=self._api_key, temperature=0
         )
@@ -147,6 +147,9 @@ def llamaguard2_judge_fn(prompts: List[str], responses: List[str]) -> List[int]:
 
 # taken from https://github.com/centerforaisafety/HarmBench/blob/main/evaluate_completions.py#L65
 def harmbench_judge_fn(prompts: List[str], responses: List[str]) -> List[int]:
+
+    from vllm import LLM, SamplingParams
+    from vllm.distributed.parallel_state import destroy_model_parallel
 
     classifier = LLM(model='cais/HarmBench-Llama-2-13b-cls', tensor_parallel_size=1)
     classifier.llm_engine.tokenizer.truncation_side = "left"

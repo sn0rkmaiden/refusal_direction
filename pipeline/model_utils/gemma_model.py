@@ -84,7 +84,7 @@ def act_add_gemma_weights(model, direction: Float[Tensor, "d_model"], coeff, lay
 
 class GemmaModel(ModelBase):
 
-    def _load_model(self, model_path, dtype=torch.bfloat16):
+    def _load_model(self, model_path, dtype=torch.float16):
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
             torch_dtype=dtype,
