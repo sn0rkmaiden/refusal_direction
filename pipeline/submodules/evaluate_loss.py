@@ -2,7 +2,7 @@ import torch
 import itertools
 import json
 
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 
 from pipeline.utils.hook_utils import add_hooks
 from pipeline.model_utils.model_base import ModelBase
@@ -49,19 +49,25 @@ def batch_iterator_custom_completions(completions_file_path: str, tokenize_instr
     return batch_iterator_chat_completions(instructions, completions, tokenize_instructions_fn, batch_size, eoi_toks)
 
 def batch_iterator_alpaca(tokenize_instructions_fn, batch_size, eoi_toks):
-    """Yields batches from the Alpaca dataset."""
+    """Yields batches from the local Alpaca dataset."""
 
-    dataset = load_dataset("tatsu-lab/alpaca", split="train")
+    dataset = load_from_disk("/home/petrova_am/hf_datasets/alpaca_train")
     dataset = dataset.shuffle(seed=42)
 
     instructions, completions = [], []
 
     for i in range(len(dataset)):
-        if dataset[i]['input'].strip() == '': # filter for instructions that do not have inputs
-            instructions.append(dataset[i]['instruction'])
-            completions.append(dataset[i]['output'])
+        if dataset[i]["input"].strip() == "":
+            instructions.append(dataset[i]["instruction"])
+            completions.append(dataset[i]["output"])
 
-    return batch_iterator_chat_completions(instructions, completions, tokenize_instructions_fn, batch_size, eoi_toks)
+    return batch_iterator_chat_completions(
+        instructions,
+        completions,
+        tokenize_instructions_fn,
+        batch_size,
+        eoi_toks,
+    )
 
 def batch_iterator_pile(tokenizer, batch_size, max_length):
     """Yields batches from the Pile dataset."""
