@@ -19,10 +19,10 @@ def refusal_score(
     refusal_toks: Int[Tensor, 'batch seq'],
     epsilon: Float = 1e-8,
 ):
-    logits = logits.to(torch.float64)
-
+    # logits = logits.to(torch.float64)
     # we only care about the last tok position
-    logits = logits[:, -1, :]
+    # logits = logits[:, -1, :]
+    logits = logits[:, -1, :].to(torch.float64)
 
     probs = torch.nn.functional.softmax(logits, dim=-1)
     refusal_probs = probs[:, refusal_toks].sum(dim=-1)

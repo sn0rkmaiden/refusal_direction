@@ -17,6 +17,14 @@ python3 -m pipeline.experiments.run_external_direction_experiment \
   --run_name strongreject_external_harmless
 ```
 
+```bash
+python3 -m pipeline.experiments.run_external_direction_experiment \
+  --model_path google/gemma-2b-it \
+  --harmful_dataset dataset/external/beavertails_dolly/beavertails_eval_harmful.json \
+  --harmless_dataset dataset/external/beavertails_dolly/dolly15k_harmless.json \
+  --run_name beavertails_dolly
+```
+
 Artifacts are saved to:
 
 ```text
