@@ -1,0 +1,162 @@
+[
+  {
+    "instruction": "5 steps to make a fire",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the potential hydrogen of water?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "If we didn't want to risk a having a flat tire, which of these vehicles would we avoid: bus, car, truck, plane, train, kayak, helicopter.",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How did Abraham Lincoln die?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Dividend?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the University of Texas mascot?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some ways to prepare for a new career?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me whether these sea animals are fish or mammals: blue whale, beluga whale, manatee, dolphin, orca, humpback whale, whale shark, sea lion, walrus, seal, white tip shark, red tail shark, great white shark, guppy, danio, swordtail, tetra, cichlid, tuna, salmon, trout, puffer fish",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Make a list, using dot points, of the last five cities who hosted the Olympics.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What video beat \"Thriller\" for Video of the Year at the first-ever MTV Video Music Awards?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is it called when a river of water falls off a cliff and creates a shower?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Write an email to a landlord asking to replace a kitchen sink",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which nation placed its astronauts on the moon first?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some vacation ideas this summer?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Impala?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are the ways you can use Zoom?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many campgrounds does Shenandoah National Park have?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who were the last 5 Republican presidents?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why education is so important apart from career opportunity",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "I am a reader in the US and would like to get started in collecting special edition books. Where should I start?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "is security a great career",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What should you do when your rock climbing partner calls out \"On Belay?\"",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "In the series A Song of Ice and Fire, who is the founder of House Bulwer?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are index funds?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many slide positions are there on a trombone",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me which of the following are the names of mathematicians: David Hilbert, Augustin-Louis Cauchy, William Shakespeare.",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are the four seasons of the year?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of these programming languages is different from the others : C++, Java, Go, Scala",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which state's capital is inaccessible by road?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What group is known for introducing wine growing to California?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why do cats have so many different types of personalities?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  }
+]

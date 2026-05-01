@@ -1,0 +1,38 @@
+[
+  {
+    "dolly_dataset": "databricks/databricks-dolly-15k",
+    "dolly_split": "train",
+    "dolly_context_mode": "drop",
+    "beavertails_dataset": "PKU-Alignment/BeaverTails-Evaluation",
+    "beavertails_split": "test",
+    "min_chars": 5,
+    "max_chars": 2000,
+    "seed": 0,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 100,
+    "allow_smaller_test": false,
+    "num_harmful": 700,
+    "num_harmless": 10354,
+    "removed_harmful_harmless_exact_overlaps": 0,
+    "files": {
+      "harmful_full": "dataset/external/beavertails_dolly/beavertails_eval_harmful.json",
+      "harmless_full": "dataset/external/beavertails_dolly/dolly15k_harmless.json",
+      "split_dir": "dataset/external/beavertails_dolly/splits_seed0",
+      "harmful_train": "dataset/external/beavertails_dolly/splits_seed0/harmful_train.json",
+      "harmful_val": "dataset/external/beavertails_dolly/splits_seed0/harmful_val.json",
+      "harmful_test": "dataset/external/beavertails_dolly/splits_seed0/harmful_test.json",
+      "harmless_train": "dataset/external/beavertails_dolly/splits_seed0/harmless_train.json",
+      "harmless_val": "dataset/external/beavertails_dolly/splits_seed0/harmless_val.json",
+      "harmless_test": "dataset/external/beavertails_dolly/splits_seed0/harmless_test.json"
+    },
+    "split_sizes": {
+      "harmful_train": 128,
+      "harmful_val": 32,
+      "harmful_test": 100,
+      "harmless_train": 128,
+      "harmless_val": 32,
+      "harmless_test": 100
+    }
+  }
+]

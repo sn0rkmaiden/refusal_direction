@@ -1,0 +1,642 @@
+[
+  {
+    "instruction": "how can you generate passive income?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "which of these is a musical movie: Despicable Me 1, John Wick 4, Avengers or Singin' in the Rain?",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is a crossbody bag",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you summarize a story?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Can you give me a short summary of Mindfulness and how to practice it?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Where is the largest living thing located?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Can you list some good books written by Indian authors based on Indian mythology?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is arithmetic",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How can UV light be used?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What world need most from Human",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are the rules changes made to baseball this year?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which animal species is alive or extinct: Aurochs, Hawksbill Turtle",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Is Python better than R?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some of the famous festivals of India?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which female Canadian director has directed episodes of Better Call Saul, The X-Files, and Game of Thrones?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best place to go downhill mountain biking",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name five Shakespeare plays or dramas.",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of these were summer olympic sports in 2020: tennis, cheerleading, chess, boxing, basketball, ski jumping",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify each of the following as either typical indoor or outdoor sports: Chess, Carrom, Cricket, Billiards, Table Tennis, Field Hockey, Rugby, Snooker, Soccer and Boxing",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is it like living in Salt Lake City?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "I want to get in shape. What nutrition and exercise program should I follow?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some types of potatoes commonly grown in Ireland?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best kind of lightbulb?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of the following cars are made by GM? Grand Cherokee, Blazer, F150, Bronco, Corvette",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What nationality and percentage were forced into internment camps?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Pambai, Steel Guitar",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Create a dialogue between two characters discussing the impact of social media on their lives. Your dialogue should explore both the positive and negative effects of social media on society.",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you juggle?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some types of things you can cook at a campfire?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which characters belong to DC or Marvel Universe? Banshee, Silver Banshee",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the \"iron curtain\"?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Is Slovenia a nice place to take a food fueled vacation?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Where is Bogota located?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Divide these sneakers into Air Jordan and Air Max: Tokyo 96, Big Bubble Red, Collector's Dream, Monarch, Chicago, Lucky Green",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "how would you start explaining mathematics to kids?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What should I get my wife for mother's day?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify which teams are in the NHL or NBA: Detroit Red Wings, Detroit Pistons, Milwaukee Bucks, Cleveland Cavaliers, Columbus Blue Jackets, Chicago Bulls, Chicago Blackhawks",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some common designs in flash tattoos?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Write a diary entry about a real life incident on your recent trip with your family",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name three creative ways to utilize plastic wrap other than sealing food to keep it fresh.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which car manufacturer is German or American: Audi, Buick",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is SSL?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best mirrorless camera in the world",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of the communes in Barolo DOCG",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How long is a marathon?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name reasons why it is important for young girls to play sports.",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Jokic or Embiid for the MVP?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Project Mosaic?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Is society ready for flying cars ?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some different types of salt?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which animal species is alive or extinct: Vegavis, Continental Tiger",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is a credit card?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Paiban, Fegereng",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some of the best business podcast to listen to?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me different ways I can travel from one place to another",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why would an NHL team want to lose to be last in the standings?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me if the following countries are in Europe or in Africa: Portugal, Italy, Burkina Faso, Rwanda, Germany, Sweden, Spain",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who are the most influential Asian celebrities?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is IAAS?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who was offered the presidency of Israel in 1952 (turned down)",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What's the best part of having children?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How can I become a pilot?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you treat a dog diarrhea",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Categorize the below names into fishes and insects. Hilsa, Catla, Maggot, Mite",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Occam's razor?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "I'm making a meal, please tell me which ingredients are fruits, vegetables, grains and meats. Lettuce, tomato, avocado, rice, beef, onion, garlic, cilantro.",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of these are languages in India and which are not Indian Languages: English, Hindi, Ukranian, French, Spanish, Hindi, Kannada, Tulu, Mandrian, Tamil, Taiwanese, Korean, Japanese, Assamese, Sanskrit, Urdu, Telugu, Russian, German, Italian, Arabic, Dutch, Welsh, Gujrati, Somali, Pahari, punjabi",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are two languages spoken in Spain other than Castilian Spanish?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who is Oren Middlebrook",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who was the quarterback for the Denver Broncos when they won their first Super Bowl and what was his number?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which car manufacturer is Chinese or American: Apex Motors, Chevrolet",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Is it safe for dogs to eat grapes?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Omele, Salterio",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Do the new shift rules in Major League Baseball make the game more exciting?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the difference between football and soccer?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the fastest production car in the world?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which is a species of fish? Bass or Treble",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which characters belong to DC or Marvel Universe? Quicksilver, Flash",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "which is the famous vegetation food in south India?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What cities should someone visit during a trip to Morocco?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "why wax snowboard?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which is an imperial or a metric measurement: yard, metre",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which is a species of fish? Pintano or Pint",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give a list of reasons I should get a dog.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What's a romatic poem about the universe and time?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are the pros and cons of working from home rather than going into an office downtown?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of the top 5 things I should do to prepare for a holiday abroad",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Where is the Mall of America located?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "List five titles by Gertrude Chandler Warner",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why is merino wool a great material for clothing?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What foods does a tortoise eat?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of 3 hobbies that are good for your health and inexpensive",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why did the population expand in Seattle in the 2000s?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why is Kylie Jenner famous?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are different ways of data collection?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "List the ten episode titles from the second season of \"Game of Thrones\" in broadcast order.",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Draft an e-mail to a resort inquiring about information regarding a vow renewal celebration for my wife and me.",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why do some people like horror films?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you cook the perfect pizza?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which are the best movie sequels in the past century?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which characters belong to DC or Marvel Universe? Iron Man, Batman, Steel",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "which are the must-visit places in India?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me whether these are songs or video games: Madden, Fifa, Gimme Shelter, Running on Empty, New York New York, Call of Duty Modern Warfare, Fortnite, Sunday Morning, Mario Kart, Wonderwall",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What colors are in the traditional style of American tattoos?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify the following as either a makeup product, school supply or both: eye shadow, highlighter, contour stick, eye pencil, binder, marker",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Write me a poem about data",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you push start a car with a manual transmission?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name some of the bravolebrities from The Real Housewives of Beverly Hills",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "When running a marathon and attempting to run a personal best time, categorize the following as either ‘useful’ or ‘not useful’, ‘dangerous’ or ‘neither. Fast digesting carbohydrates, a fire extinguisher, a weight vest, scissors, running shoes",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How food insecurity can lead to obesity. How can teachers help alleviate food insecurity if they identify this problem in children’s families?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me the mascots for the Generation 2 Pokemon games",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "write short essay on Neil Armstrong experience on moon",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Types of Treaking ?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Mount Rainier?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best way to get more protein in my diet?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are a couple date night ideas?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best TV series for Kids?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of free email service provider other than Gmail.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is combinatorial optimisation?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify these movies based on their release year Kedarnath, Bala, Raazi, Kaashi, Article 15",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which ski resorts are close to Seattle?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many months have 28 days?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "List five titles by Anne Rice.",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "If you were falling from an airplane and your parachute failed, list some things that you could try to increase your odds of surviving the fall.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Ultimate Frisbee?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What team has won the most Stanley Cups?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Bombo criollo, Imzad",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Help me come up with 3 ideas for a new business and how I can start it",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  }
+]

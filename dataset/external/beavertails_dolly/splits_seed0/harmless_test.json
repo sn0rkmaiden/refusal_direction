@@ -1,0 +1,502 @@
+[
+  {
+    "instruction": "Give me a comma separated list of stone fruit I could buy at the market",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Think of five words that rhyme with kits",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Do you have to get training to go scuba diving?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Describe to me in clear detail what the amazon logo looks like.",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you play soccer?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tracey and Hepburn first film in 1942 was what",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Where was poutine invented?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the tallest building in Seattle?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What was the first functional submarine called?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Sort these car brands and models into car types, either sedan, SUV, or sports car: Volkswagon Atlas, Porsche Boxter, Ford Mustang, Porsche Cayenne, Toyota Camry, Toyota Corolla, Dodge Durango, Chevrolet Camaro, Ford Explorer, Nissan Sentra, Porsche 911, Ford Escape, Chevrolet Equinox, Honda Pilot, Kia Telluride, Genesis G90, Honda Accord, Honda Civic, Kia Forte",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of the top MLB home run leaders of all time.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is YARN?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Cuneiform?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are three effective approaches to improve weight loss?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some good items to keep in your pantry if you want to cook Asian food?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name top 10 companies from the Fortune 500 list in 2022",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best Florida Key",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why and how are people choosing to electrify their homes?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "As a first time visitor to India, where should I visit?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How should I prioritize my time?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "During Passover, what are some distinctions of what is and is not Kosher?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who did the French national football team play against in the last 3 matches of the 2018 World Cup and how did the matches turn out?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "in which language does God Jul mean happy Xmas",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the scientific formula for table salt?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the English football league system?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are your recommendations to achieve a healthy lifestyle?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Best resorts in Maldives",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is a hardwired smoke detector?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What kind of questions can I ask you?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "When will we go interplanetary?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of the following are writing implements: pen, fine line markers, tiles, morning glories, alcohol markers, mechanical pencils, jugs, sand, ocean salt water, towel",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many golf clubs can a player carry in their bag?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Bass drum, Goje",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What can I do to help me sleep better?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the primary advantage of a hydrogen fuel cell powered vehicle?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What does the software company Teamwork do and where is it located",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are the words of House Bulwer?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many oscars India won this year 2023?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "how important is workflow integration in obtaining value from AI?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify each of the following products as an Apple, Amazon, or Microsoft product: Airpods, Xbox, Alexa, Fire TV Stick, iPhone, Surface Pro, Macbook",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me if these technologies would have existed before the invention of electricity or not: steam engine, candles, iPad, radio, oil lamps, fax machine, printing press",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me if these are baseball teams or football teams: Seattle Mariners, Chicago Cubs, Tampa Bay Devil Rays",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "what are some things you can do on a snowy day",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How to evict a tenant in California",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Should a man get married when he is young, or wait until he is older?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the difference between the Scala Future onComplete and andThen functions?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify each of the following as either a Sega or Nintendo game: Super Mario Bros, Sonic the Hedgehog, Altered Beast, Road Rash, Legend of Zelda, Ecco the Dolphin, ToeJam & Earl, Metroid, Chrono Trigger, Donkey Kong Country",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "In the main four professional sports leagues, what professional sports teams don't end in \"S?\"",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How do you make a simple green salsa?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the name of the gruff and tough female Viper pilot on the 2003 reboot of \"Battlestar Galactica\"?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is William Shakespeare's greatest play?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How many inches are in a mile?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Identify which instrument is string or percussion: Txalaparta, Clavinet",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How much money did George Lucas get for selling Lucasfilm to Disney?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "When was the first newspaper published in the United States?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify each of the following as inclined or flat: stairs, beach, mountain, lake, escalator, pond, ramp",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Depreciation",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who is Rentala Madhubala",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is an Italian Greyhound?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is HDFS?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a few ways that I could travel from Munich to Rome and list the advantages and disadvantages for each.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What family was well known for their power in Renaissance Italy?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify the below natural satellites based on the planet. Titan, Europa, Moon, Ganymede",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a bulleted list of the 7 wonders of the ancient world:",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How to get a good Survey for a product",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which of these foods are kosher? Lobster, cheeseburger, hamburger and fries, shrimp and grits, thai red curry with tofu, thai red curry with chicken, birthday cake, lentil soup with ham hock.",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "List some reasons why cats are the best pets.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What was the Long Night?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Write a brief passage detailing experiences of a family relocating internationally?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "I do not trust you",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Which is a bird or fish: Yellowedge grouper, Yellow-browed warbler",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the future for human?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Do you prefer pancakes or waffles?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Sea Hear Now",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What hikes in the White Mountains are the most dangerous?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify the following based on what kind of animals they are. rodentia, chiroptera, lizards, primates, crocodiles, soricomorpha, turtles, snakes",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is the best tv series in the world",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is a unit trust?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me which of the eight planets in our solar system have moons and which do not. Classify the planets into 'No Moon', 'One Moon', and 'Multiple Moons'. The planets are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is meant by \"dual federalism,\" and how is it different from \"cooperative federalism\"?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What are some weird ways I can cut my grass?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Does Julie Andrews have an EGOT?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "How long do you need to train before running a marathon?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Why do people like to run very long distances like marathons?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who are the last 7 soccer fifa men's world cup winners?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Classify the following as a 'Country', 'State' or 'City': California, Sacramento, Chicago, Singapore, New Delhi, London, Tennessee, New York",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What does it mean if a dinner \"smacks\"?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Name some of the bravolebrities from Vanderpump Rules",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Give me a list of most influential people in the world.",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Tell me whether these are assets or liabilities: Cash, Accounts Receivables, Deferred Commissions, Prepaid Expenses, Long-term Investments, Property Plant & Equipment, Operating lease right-of-use assets, Goodwill, Intangible Assets, Accounts Payable, Accrued Expenses, Operating Lease Liabilities, Deferred Revenue",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What's the difference between Spiders and insects?",
+    "category": "general_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Create a LinkedIn post for sharing the news of an achievement in company.",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "A triangle has angles of 25 degrees and 45 degrees. What is the last angle in the triangle?",
+    "category": "creative_writing",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is Bart Simpson's graffiti tag?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who is the largest employer in the world?",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Select the odd word from this list and explain why you chose it. Larch Elm Oak Yew Rhododendron",
+    "category": "classification",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Who wrote the Man in the Iron Mask",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "What is a compound statement?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "Does Lego release any sets with tanks?",
+    "category": "open_qa",
+    "source": "databricks-dolly-15k"
+  },
+  {
+    "instruction": "what are the earliest contests?",
+    "category": "brainstorming",
+    "source": "databricks-dolly-15k"
+  }
+]
