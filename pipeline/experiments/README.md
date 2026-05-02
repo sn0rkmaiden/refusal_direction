@@ -46,6 +46,31 @@ python3 -m pipeline.experiments.run_split_half_stability \
   --run_name default
 ```
 
+Gemma:
+```python
+CUDA_VISIBLE_DEVICES=1 python3 -m pipeline.experiments.run_split_half_stability \
+  --model_path google/gemma-2b-it \
+  --run_name author_seed42_repeats8_pool256_half128 \
+  --seed 42 \
+  --n_repeats 8 \
+  --pool_size 256 \
+  --half_size 128 \
+  --n_val 32
+```
+
+Qwen:
+
+```python
+CUDA_VISIBLE_DEVICES=1 python3 -m pipeline.experiments.run_split_half_stability \
+  --model_path qwen/qwen-1_8b-chat \
+  --run_name author_seed42_repeats8_pool256_half128 \
+  --seed 42 \
+  --n_repeats 8 \
+  --pool_size 256 \
+  --half_size 128 \
+  --n_val 32
+```
+
 Artifacts are saved to:
 
 ```text
@@ -63,6 +88,26 @@ python3 -m pipeline.experiments.run_base_chat_comparison \
   --base_model_path google/gemma-2b \
   --chat_model_path google/gemma-2b-it \
   --run_name gemma_2b_base_vs_it
+```
+
+Gemma:
+```python
+CUDA_VISIBLE_DEVICES=1 python3 -m pipeline.experiments.run_base_chat_comparison \
+  --base_model_path google/gemma-2b \
+  --chat_model_path google/gemma-2b-it \
+  --run_name gemma_2b_base_vs_it_seed42 \
+  --seed 42 \
+  --base_search_mode both
+```
+
+Qwen:
+```python
+CUDA_VISIBLE_DEVICES=1 python3 -m pipeline.experiments.run_base_chat_comparison \
+  --base_model_path Qwen/Qwen-1_8B \
+  --chat_model_path Qwen/Qwen-1_8B-Chat \
+  --run_name qwen_1_8b_base_vs_chat_seed42 \
+  --seed 42 \
+  --base_search_mode both
 ```
 
 Artifacts are saved to:

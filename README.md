@@ -1,77 +1,272 @@
-# Refusal in Language Models Is Mediated by a Single Direction
+# Эксперименты по нахождению вектора отказа
 
-**Content warning**: This repository contains text that is offensive, harmful, or otherwise inappropriate in nature.
+В этом файл описыны три дополнительных эксперимента к коду для статьи **Refusal in Language Models Is Mediated by a Single Direction**: перенос поиска направления на внешние данные, проверку устойчивости к случайным подвыборкам и сравнение исходной (базовой) и диалоговой моделей.
 
-This repository contains code and results accompanying the paper "Refusal in Language Models Is Mediated by a Single Direction".
-In the spirit of scientific reproducibility, we provide code to reproduce the main results from the paper.
-
-- [Paper](https://arxiv.org/abs/2406.11717)
-- [Blog post](https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction)
-
-## Setup
+Все команды предполагают запуск из корня репозитория:
 
 ```bash
-git clone https://github.com/andyrdt/refusal_direction.git
-cd refusal_direction
-source setup.sh
+cd ./refusal_direction
 ```
 
-The setup script will prompt you for a HuggingFace token (required to access gated models) and a Together AI token (required to access the Together AI API, which is used for evaluating jailbreak safety scores).
-It will then set up a virtual environment and install the required packages.
 
-## Reproducing main results
+## Поиск направления отказа на внешних данных
 
-To reproduce the main results from the paper, run the following command:
+### Цель
+
+Проверить, можно ли найти функциональное направление отказа не только на исходных данных, которые использовали авторы, но и на другой паре наборов данных:
+
+- вредные инструкции: `BeaverTails-Evaluation`;
+- безвредные инструкции: `Dolly 15k`.
+
+### Подготовка данных
+
+```python
+python3 -m pipeline.experiments.prepare_external_datasets \
+  --output_dir dataset/external/beavertails_dolly \
+  --seed 0 \
+  --beavertails_split test
+```
+
+Файлы вывода:
+
+```text
+dataset/external/beavertails_dolly/
+  beavertails_eval_harmful.json
+  dolly15k_harmless.json
+  metadata.json
+  splits_seed0/
+    harmful_train.json
+    harmful_val.json
+    harmful_test.json
+    harmless_train.json
+    harmless_val.json
+    harmless_test.json
+```
+
+Размеры:
+
+```text
+num_harmful = 700
+num_harmless = 10354
+
+harmful_train = 128
+harmful_val = 32
+harmful_test = 100
+harmless_train = 128
+harmless_val = 32
+harmless_test = 100
+```
+
+### Запуск
+
+
+Модель `gemma-2b-it`:
 
 ```bash
-python3 -m pipeline.run_pipeline --model_path {model_path}
+python3 -m pipeline.experiments.run_external_direction_experiment \
+  --model_path google/gemma-2b-it \
+  --split_dir dataset/external/beavertails_dolly/splits_seed0 \
+  --run_name beavertails_dolly_seed0 \
+  --seed 0
 ```
-where `{model_path}` is the path to a HuggingFace model. For example, for Llama-3 8B Instruct, the model path would be `meta-llama/Meta-Llama-3-8B-Instruct`.
 
-The pipeline performs the following steps:
-1. Extract candiate refusal directions
-    - Artifacts will be saved in `pipeline/runs/{model_alias}/generate_directions`
-2. Select the most effective refusal direction
-    - Artifacts will be saved in `pipeline/runs/{model_alias}/select_direction`
-    - The selected refusal direction will be saved as `pipeline/runs/{model_alias}/direction.pt`
-3. Generate completions over harmful prompts, and evaluate refusal metrics.
-    - Artifacts will be saved in `pipeline/runs/{model_alias}/completions`
-4. Generate completions over harmless prompts, and evaluate refusal metrics.
-    - Artifacts will be saved in `pipeline/runs/{model_alias}/completions`
-5. Evaluate CE loss metrics.
-    - Artifacts will be saved in `pipeline/runs/{model_alias}/loss_evals`
+Модель `Qwen/Qwen-1_8B-Chat`:
 
-For convenience, we have included pipeline artifacts for the smallest model in each model family:
-- [`qwen/qwen-1_8b-chat`](/pipeline/runs/qwen-1_8b-chat/)
-- [`google/gemma-2b-it`](/pipeline/runs/gemma-2b-it/)
-- [`01-ai/yi-6b-chat`](/pipeline/runs/yi-6b-chat/)
-- [`meta-llama/llama-2-7b-chat-hf`](/pipeline/runs/llama-2-7b-chat-hf/)
-- [`meta-llama/meta-llama-3-8b-instruct`](/pipeline/runs/meta-llama-3-8b-instruct/)
-
-## Minimal demo Colab
-
-As part of our [blog post](https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction), we included a minimal demo of bypassing refusal. This demo is available as a [Colab notebook](https://colab.research.google.com/drive/1a-aQvKC9avdZpdyBn4jgRQFObTPy1JZw).
-
-## As featured in
-
-Since publishing our initial [blog post](https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction) in April 2024, our methodology has been independently reproduced and used many times. In particular, we acknowledge [Fail](https://huggingface.co/failspy)[Spy](https://x.com/failspy) for their work in reproducing and extending our methodology.
-
-Our work has been featured in:
-- [HackerNews](https://news.ycombinator.com/item?id=40242939)
-- [Last Week in AI podcast](https://open.spotify.com/episode/2E3Fc50GVfPpBvJUmEwlOU)
-- [Llama 3 hackathon](https://x.com/AlexReibman/status/1789895080754491686)
-- [Applying refusal-vector ablation to a Llama 3 70B agent](https://www.lesswrong.com/posts/Lgq2DcuahKmLktDvC/applying-refusal-vector-ablation-to-a-llama-3-70b-agent)
-- [Uncensor any LLM with abliteration](https://huggingface.co/blog/mlabonne/abliteration)
-
-
-## Citing this work
-
-If you find this work useful in your research, please consider citing our [paper](https://arxiv.org/abs/2406.11717):
-```tex
-@article{arditi2024refusal,
-  title={Refusal in Language Models Is Mediated by a Single Direction},
-  author={Andy Arditi and Oscar Obeso and Aaquib Syed and Daniel Paleka and Nina Panickssery and Wes Gurnee and Neel Nanda},
-  journal={arXiv preprint arXiv:2406.11717},
-  year={2024}
-}
+```bash
+python3 -m pipeline.experiments.run_external_direction_experiment \
+  --model_path Qwen/Qwen-1_8B-Chat \
+  --split_dir dataset/external/beavertails_dolly/splits_seed0 \
+  --run_name beavertails_dolly_seed0 \
+  --seed 0
 ```
+
+### Результаты
+
+Файлы сохраняются в: ``pipeline/runs/<имя-модели>/experiments/external_direction/beavertails_dolly_seed0/``
+
+
+Основные файлы:
+
+```text
+config.json
+summary.json
+filter_counts.json
+sampled_data/
+direction.pt
+direction_metadata.json
+select_direction/
+completions/
+```
+
+Оценки по категориям находятся в файлах папки `completions/`, в поле `substring_matching_per_category`.
+
+### Основные результаты
+
+| Модель | Направление | Вредные запросы: до → после удаления | Безвредные запросы: до → после добавления |
+|---|---:|---:|---:|
+| Gemma 2B IT | слой 10, позиция -1 | 0.38 → 0.96 | 0.94 → 0.03 |
+| Qwen 1.8B Chat | слой 16, позиция -1 | 0.31 → 0.84 | 0.89 → 0.00 |
+
+Интерпретация: основной эффект переносится на внешнюю пару наборов данных. Удаление направления повышает долю ответов без явного отказа на вредных запросах, а добавление направления вызывает отказ на безвредных запросах.
+
+---
+
+## 2. Устойчивость направления к случайным подвыборкам
+
+### Цель
+
+Проверить, является ли направление отказа устойчивым к случайному выбору обучающих примеров.
+
+Процедура:
+
+1. выбирается общий пул из 256 вредных и 256 безвредных инструкций;
+2. в каждом повторе выбираются 128 вредных и 128 безвредных инструкций;
+3. направление отказа извлекается заново;
+4. выбранные направления сравниваются попарно с помощью косинусного сходства.
+
+### Запуск
+
+Для Gemma:
+
+```bash
+python3 -m pipeline.experiments.run_split_half_stability \
+  --model_path google/gemma-2b-it \
+  --run_name author_seed42_repeats8_pool256_half128 \
+  --seed 42 \
+  --n_repeats 8 \
+  --pool_size 256 \
+  --half_size 128 \
+  --n_val 32
+```
+
+Qwen:
+
+```bash
+python3 -m pipeline.experiments.run_split_half_stability \
+  --model_path Qwen/Qwen-1_8B-Chat \
+  --run_name author_seed42_repeats8_pool256_half128 \
+  --seed 42 \
+  --n_repeats 8 \
+  --pool_size 256 \
+  --half_size 128 \
+  --n_val 32
+```
+
+### Результаты
+
+Файлы сохраняются в: `pipeline/runs/<имя-модели>/experiments/split_half_stability/author_seed42_repeats8_pool256_half128/`.
+
+Основные файлы:
+
+```text
+summary.json
+repeat_summaries.json
+pairwise_cosine_signed.csv
+pairwise_cosine_abs.csv
+selected_directions.pt
+sampled_data/
+repeat_00/
+...
+repeat_07/
+```
+
+### Основные результаты
+
+| Модель | Выбранные слои и позиции | Среднее попарное косинусное сходство | Минимальное попарное косинусное сходство |
+|---|---:|---:|---:|---:|
+| Gemma 2B IT | слой 12, позиция -1 | 0.996 | 0.995 |
+| Qwen 1.8B Chat | позиция -1, слои 14–15 | 0.866 | 0.755 |
+
+Интерпретация: для Gemma направление почти не меняется при смене обучающей подвыборки. Для Qwen направление также остается достаточно близким, но точный слой менее стабилен.
+
+Важно: выбранные слой и позиция в этом эксперименте не обязаны полностью совпадать с первым воспроизведением. Возможно, существует несколько близких эффективных кандидатов, а процедура выбора отдает предпочтение разным слоям или позициям в зависимости от обучающей и проверочной подвыборок.
+
+---
+
+## 3. Сравнение исходной и диалоговой модели
+
+### Цель
+
+Проверить, есть ли похожее направление отказа в исходной модели до диалогового дообучения.
+
+Пары моделей:
+
+```text
+Gemma 2B / Gemma 2B IT
+Qwen 1.8B / Qwen 1.8B Chat
+```
+
+Скрипт рассматривает два режима для исходной модели:
+
+- `matched`: взять вектор в исходной модели на том же слое и позиции, где выбрано направление в диалоговой модели;
+- `selected`: независимо найти лучший кандидат в исходной модели среди всех слоев и позиций.
+
+### Запуск
+
+Gemma:
+
+```bash
+python3 -m pipeline.experiments.run_base_chat_comparison \
+  --base_model_path google/gemma-2b \
+  --chat_model_path google/gemma-2b-it \
+  --run_name gemma_2b_base_vs_it_seed42 \
+  --seed 42 \
+  --base_search_mode both
+```
+
+Qwen:
+
+```bash
+python3 -m pipeline.experiments.run_base_chat_comparison \
+  --base_model_path Qwen/Qwen-1_8B \
+  --chat_model_path Qwen/Qwen-1_8B-Chat \
+  --run_name qwen_1_8b_base_vs_chat_seed42 \
+  --seed 42 \
+  --base_search_mode both
+```
+
+Быстрая проверка без генерации ответов:
+
+```bash
+python3 -m pipeline.experiments.run_base_chat_comparison \
+  --base_model_path google/gemma-2b \
+  --chat_model_path google/gemma-2b-it \
+  --run_name gemma_2b_base_vs_it_seed42_no_generation \
+  --seed 42 \
+  --base_search_mode both \
+  --skip_generation
+```
+
+### Результаты
+
+Файлы сохраняются в: `pipeline/runs/<имя-диалоговой-модели>/experiments/base_chat_comparison/qwen_1_8b_base_vs_chat_seed42/`.
+
+Основные файлы:
+
+```text
+config.json
+summary.json
+sampled_data/
+chat_selected/
+base_direction_search/
+base_matched_eval/
+base_selected_eval/
+```
+
+### Основные результаты
+
+| Пара моделей | Направление в диалоговой модели | Косинусное сходство с `base matched` | Независимо выбранное направление в исходной модели | Косинусное сходство с `base selected` |
+|---|---:|---:|---:|---:|
+| Gemma 2B / Gemma 2B IT | слой 12, позиция -1 | 0.108 | слой 15, позиция -4 | 0.270 |
+| Qwen 1.8B / Qwen 1.8B Chat | слой 14, позиция -1 | 0.132 | слой 1, позиция -3 | -0.014 |
+
+Для обеих исходных моделей независимый поиск не прошел исходные критерии отбора и был выполнен в запасном режиме:
+
+```text
+fallback_lowest_ablation_refusal_score
+```
+
+Интерпретация: в диалоговых моделях вектор отказа обладает ожидаемым эффектом. В исходных моделях найденные вектора геометрически не близки к вектора диалоговых моделей, а вмешательства не воспроизводят полный эффект. Особенно важно, что добавление направления в исходной модели почти не вызывает отказ на безвредных запросах. Это предварительно указывает на то, что механизм отказа в изученной форме связан прежде всего с дообучением следовать инструкциям. Однако это не значит, что в исходной модели нет более ранних связанных представлений.
+
+---
+
